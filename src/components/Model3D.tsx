@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 interface Model3DProps {
   modelUrl?: string;
@@ -8,7 +8,7 @@ interface Model3DProps {
   onAnimationPlay?: (name: string) => void;
 }
 
-export default function Model3D({ modelUrl, onModelLoaded, onAnimationPlay }: Model3DProps) {
+export default function Model3D({ onModelLoaded, onAnimationPlay }: Model3DProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Model3D({ modelUrl, onModelLoaded, onAnimationPlay }: Mo
     renderer.setSize(width, height);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFShadowShadowMap;
+    renderer.shadowMap.type = THREE.PCFShadowMap;
     containerRef.current.appendChild(renderer.domElement);
 
     // Orbit controls

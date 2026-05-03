@@ -144,9 +144,6 @@ export default function Contact3D() {
     airplaneEl.textContent = '✈️';
     document.body.appendChild(airplaneEl);
 
-    const startX = formRef.current?.getBoundingClientRect().left || 0;
-    const startY = formRef.current?.getBoundingClientRect().top || 0;
-
     gsap.to(airplaneEl, {
       x: window.innerWidth + 100,
       y: -window.innerHeight,

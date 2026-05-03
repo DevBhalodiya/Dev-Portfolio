@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
 interface Text3DProps {
   text: string;
@@ -44,7 +44,7 @@ export default function Text3D({ text, onReady }: Text3DProps) {
         const textGeometry = new TextGeometry(text, {
           font,
           size: 1,
-          height: 0.3,
+          depth: 0.3,
           curveSegments: 12,
           bevelEnabled: true,
           bevelThickness: 0.05,

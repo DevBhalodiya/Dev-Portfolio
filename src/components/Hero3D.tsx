@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import gsap from 'gsap';
 import Model3D from './Model3D';
-import Text3D from './Text3D';
 import '../styles/Hero3D.css';
 
 export default function Hero3D() {

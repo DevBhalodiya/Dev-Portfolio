@@ -180,7 +180,7 @@ export default function Skills3D() {
 
       angle += 0.001;
 
-      planets.forEach((planet, i) => {
+      planets.forEach((planet) => {
         const time = Date.now() * planet.orbitSpeed * 0.001;
         planet.mesh.position.x = Math.cos(time) * planet.orbitRadius;
         planet.mesh.position.z = Math.sin(time) * planet.orbitRadius;
