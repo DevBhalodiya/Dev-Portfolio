@@ -63,8 +63,8 @@ body {
 }
 
 section {
-  min-height: 100vh;
-  padding: 5rem 4rem;
+  min-height: auto;
+  padding: 1.5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

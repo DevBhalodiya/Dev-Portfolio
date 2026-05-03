@@ -1,6 +1,10 @@
 import { FiCheck } from 'react-icons/fi';
 import { FiAward } from 'react-icons/fi';
 import { useIntersection } from '../hooks/useIntersection';
+import awsCloudDeveloping from '../assets/badges/AWS-Cloud-Developing.png';
+import awsCloudFoundation from '../assets/badges/AWs-Cloud-Foundation.png';
+import ibmDevOps from '../assets/badges/IBM-DevOps.png';
+import ibmML from '../assets/badges/IBM-ML.png';
 import './Certifications.css';
 
 const certifications = [
@@ -13,19 +17,19 @@ const certifications = [
 const badges = [
   {
     title: 'AWS Cloud Developing',
-    src: 'https://www.credly.com/badges/b945b39d-1ad8-48c6-88d0-349ee845c62d/embedded',
+    src: awsCloudDeveloping,
   },
   {
     title: 'AWS Cloud Foundations',
-    src: 'https://www.credly.com/badges/8f7911f5-2d80-4f46-b2ee-1e46a0e93c36/embedded',
+    src: awsCloudFoundation,
   },
   {
     title: 'DevOps Essentials',
-    src: 'https://www.credly.com/badges/974cd9e9-6521-4d33-a625-16df7ffcb4e7/embedded',
+    src: ibmDevOps,
   },
   {
     title: 'ML with Python (V2)',
-    src: 'https://www.credly.com/badges/59e544cf-97ce-4256-a402-5023d7b77463/embedded',
+    src: ibmML,
   },
 ];
 
@@ -58,13 +62,10 @@ const Certifications = () => {
           <div className="badges-grid">
             {badges.map((badge, idx) => (
               <div key={idx} className="badge-wrapper glass-card">
-                <iframe
+                <img 
                   src={badge.src}
-                  width="150"
-                  height="270"
-                  frameBorder="0"
-                  title={badge.title}
-                  allow="encrypted-media"
+                  alt={badge.title}
+                  className="badge-image"
                 />
                 <p className="badge-label">{badge.title}</p>
               </div>

@@ -6,7 +6,7 @@ const projects = [
     title: 'Group Study Organizer',
     tech: ['React Native', 'Firebase', 'Cloudinary'],
     description:
-      'Mobile app for collaborative group study with real-time Firebase authentication, data management, and Cloudinary-powered media sharing.',
+      'Built a React Native–based Group Study App backed by Firebase services for authentication, real-time collaboration, and data management. Implemented Cloudinary for efficient media storage, allowing users to share images and PDFs seamlessly within study groups.',
     type: 'mobile',
     featured: true,
   },
@@ -14,14 +14,14 @@ const projects = [
     title: 'KhataBook – Digital Credit System',
     tech: ['React Native (Expo)', 'Firebase'],
     description:
-      'Cross-platform mobile app for shop owners to digitally manage customer credit records, track transactions and balances.',
+      "A cross-platform mobile application built using React Native (Expo) & Firebase that helps small shop owners manage customer credit (khata) records digitally.The app allows tracking of credit transactions, payments, and outstanding balances for both shop owners and customers.",
     type: 'mobile',
   },
   {
     title: 'AI Crop Disease Prediction',
     tech: ['Python', 'CNN', 'React', 'REST API'],
     description:
-      'Web app using CNNs to detect crop diseases from images with real-time environmental data and treatment recommendations.',
+      'Developed a web-based application that uses Convolutional Neural Networks (CNN) to detect crop diseases from images and integrates real-time environmental data for improved prediction accuracy. Implemented a user-friendly frontend and a backend API for disease analysis, providing treatment recommendations to assist farmers in early decision-making.',
     type: 'ai',
   },
   {
@@ -56,7 +56,7 @@ const Projects = () => {
               <p className="project-desc">{project.description}</p>
 
               <div className="project-links">
-                <a href="#" className="link">
+                <a href="https://github.com/DevBhalodiya" className="link">
                   GitHub ↗
                 </a>
                 

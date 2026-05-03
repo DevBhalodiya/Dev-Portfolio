@@ -13,10 +13,10 @@
 .timeline {
   position: relative;
   max-width: 800px;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .timeline::before {
