@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p className="footer-text">// dev_bhalodiya © 2025</p>
-        <p className="footer-built">Built with React + ☁️ Deployed on Vercel</p>
+        <p className="footer-text">// dev_bhalodiya © 2026</p>
+      
 
         <div className="footer-socials">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
